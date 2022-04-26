@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="JeffersonLopezExamen.Resumen">
+    <ContentPage.Content>
+        <StackLayout Padding="0,20,0,0">
+
+
+            <Label Text="Resumen"
+                   HorizontalOptions="Center"
+                   FontSize="Large" BackgroundColor="SteelBlue" TextColor="GhostWhite"/>
+
+            <Label x:Name="lblUsuario" FontSize="Small" BackgroundColor="SkyBlue" TextColor="GhostWhite"/>
+
+          
+
+            <Grid  Margin="2" >
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+
+                </Grid.ColumnDefinitions>
+
+
+                <Label Text="Nombre del Estudiante" FontSize="Default" Grid.Row="0" Grid.Column="0"/>
+                <Entry x:Name="txtNombre" Grid.Row="0" Grid.Column="1" Placeholder="Nombre y Apellido" VerticalOptions="Center"  Keyboard="Text" IsEnabled="False" ></Entry>
+
+
+
+            </Grid>
+
+
+            <Label Text="Cuotas" FontSize="Medium" BackgroundColor="SkyBlue"/>
+            <Grid  Margin="2" >
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+
+                </Grid.ColumnDefinitions>
+
+
+                <Label Text="Total a Pagar" FontSize="Default" Grid.Row="0" Grid.Column="0"/>
+                <Entry x:Name="txtTotalapagar" Grid.Row="0" Grid.Column="1" VerticalOptions="Center"  Keyboard="Numeric" IsEnabled="False" ></Entry>
+
+               
+            </Grid>
+
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

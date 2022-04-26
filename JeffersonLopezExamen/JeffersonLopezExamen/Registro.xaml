@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="JeffersonLopezExamen.Registro">
+    <ContentPage.Content>
+
+        <ScrollView>
+            <StackLayout Padding="0,20,0,0">
+
+
+                <Label Text="Registro"
+                   HorizontalOptions="Center"
+                   FontSize="Large" BackgroundColor="SteelBlue" TextColor="GhostWhite"/>
+
+                <Label x:Name="lblUsuario" FontSize="Small" BackgroundColor="SkyBlue" TextColor="GhostWhite"/>
+
+                <Label Text="Datos del Estudiante" FontSize="Medium" BackgroundColor="SkyBlue"/>
+
+                <Grid  Margin="2" >
+                    <Grid.RowDefinitions>
+                        <RowDefinition />
+                        <RowDefinition />
+                        <RowDefinition />
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+
+                    </Grid.ColumnDefinitions>
+
+
+                    <Label Text="Nombre del Estudiante" FontSize="Default" Grid.Row="0" Grid.Column="0"/>
+                    <Entry x:Name="txtNombre" Grid.Row="0" Grid.Column="1" Placeholder="Nombre y Apellido" VerticalOptions="Center"  Keyboard="Text" TextChanged="txtNombre_TextChanged" ></Entry>
+
+                  
+
+                </Grid>
+
+
+                <Label Text="Cálculo de Cuotas" FontSize="Medium" BackgroundColor="SkyBlue"/>
+                <Grid  Margin="2" >
+                    <Grid.RowDefinitions>
+                        <RowDefinition />
+                        <RowDefinition />
+                      
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+
+                    </Grid.ColumnDefinitions>
+
+
+                    <Label Text="Monto Inicial" FontSize="Default" Grid.Row="0" Grid.Column="0"/>
+                    <Entry x:Name="txtMonto" Grid.Row="0" Grid.Column="1" Placeholder="Ingrese el monto inicial" VerticalOptions="Center"  Keyboard="Numeric" TextChanged="txtMonto_TextChanged" ></Entry>
+
+                    <Label Text="Pago Mensual" FontSize="Default" Grid.Row="1" Grid.Column="0"/>
+                    <Entry x:Name="txtpagomensual" Grid.Row="1" Grid.Column="1" VerticalOptions="Center"></Entry>
+
+                    <Button x:Name="btnCalcular" Text="Calcular" Clicked="btnCalcular_Clicked" Grid.Row="2" Grid.Column="3"></Button>
+                </Grid>
+              
+                <Button x:Name="btnGuardar" Text="Guardar" Clicked="btnGuardar_Clicked"></Button>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
